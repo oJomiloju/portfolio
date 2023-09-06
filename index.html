@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lan="en">
+<head> <!--we always start with the meta tags-->
+    <meta charset="UTF-8"> <!--determined how text is transmitted and stored. This one used specifically represents almost all characters from various systems in the world-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!--instructs the browser to use the latest version of internet explorers rendering engine-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!---linking CSS externally-->
+    <link rel="stylesheet" href="style.css"> <!--this links te css file externally-->
+    <!--font awesome cdn for font icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container"> <!--this covers the whole body of the webpage-->
+        <div class="profile-card">
+            <div class="profile-pic"> <!--notice profile pic is in profile card-->
+                <img src="images/profile2.JPG" alt="user-avatar" width="300" height="350"> <!--this is for my profile picture-->
+            </div>
+        
+
+        <div class="profile details">
+            <div class="intro">
+                <h2>Jomi Okuwobi</h2>
+                <h4>aspiring Software Engineer</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com/_jomi.o/"><i class="fab fa-instagram" style="color: var(--dark-magenta)"></i></a> <!--fab stands for font awesome brands. It indicates an icon should be displayes from the library-->
+                    <a href="https://twitter.com/JomilojuOkuwobi"><i class="fab fa-twitter" style="color: var(--skyblue)"></i></a> <!--var is used to insert the value of a CSS variable-->
+                    <a href="https://www.linkedin.com/in/jomiloju-okuwobi-5912bb251/"><i class="fab fa-linkedin" style="color: var(--light-green)"></i></a>
+                    <!--<a href="https://www.linkedin.com/in/jomiloju-okuwobi-5912bb251/"><i class="fab fa-github" style="color: var(--light-green)"></i></a>-->
+                </div>
+            </div>
+
+        <div class="contact-info">
+            <div class="row">
+                <div class="icon">
+                    <i class="fa fa-phone" style="color: var(--dark-magenta)"></i>
+                </div>
+                <div class="content">
+                    <span>Phone</span>
+                    <h5>+123 (682) 718 6025</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="icon">
+                    <i class="fa fa-envelope-open" style="color: var(--light-green)"></i>
+                </div>
+                <div class="content">
+                    <span>Email</span>
+                    <h5>jomilojuokuwobi@gmail.com</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="icon">
+                    <i class="fa fa-map-marker" style="color: var(--light-purple)"></i>
+                </div>
+                <div class="content">
+                    <span>Location</span>
+                    <h5>Fort Worth, Texas</h5>
+                </div>
+            </div>
+
+        </div>
+        <!--<a href="oluwajomiloju_okuwobi_resume (2).pdf">
+            <button class="download-btn"><i>Download Resume</button>
+        </a>-->
+        </div>
+    </div>
+    <!--about section-->
+
+    <div class="about">
+        <h1>About Me</h1>
+        <p>
+            I'm an aspiring software engineer currently at the 
+            University of Texas Arlington. I am primarily 
+            interested in Full Stack Development and Artificial
+            Intelligence. I enjoy simple, beautiful, and intuitive designs.
+         </p>
+
+
+         <P>
+            My goal is to bring my ideas and others to life in 
+            the most creative way possible.
+         </P>
+
+         <br>
+         <!--<h2>What I Do !!!</h2>-->
+         <div class="work">
+            <div class="workbox">
+                <div class="icon">
+                    <img src="images/api.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h3>Projects</h3>
+                    <p>
+                        <dl class="descriotion-list">
+                            <dt>Vector Library</dt>
+                            <br>
+                            <dd>Developed a custom vector library utilizing the c programming language to facilitate efficient vector computations and manipulations</dd>
+                            <br>
+                            <dt>Abstract Data Types</dt>
+                            <br>
+                            <dd>
+                                Developed C code to incorporate undo and redo functionality into human-computer 
+                                interfaces, allowing users to reverse or revert actions and restore previous states.
+                                Implemented an email to do application that utilizes abstract 
+                                data types (ADTs) to organize tasks in descending order of priority. 
+                            </dd>
+                            <br>
+                            <dt>Burglar Alarm System</dt>
+                            <br>
+                            <dd>
+                                Utilized basic UDP network protocol and server client network communications
+                                to develop a burglar alarm client application that communicates with a central
+                                alarm monitoring server.
+                            </dd>
+                          </dl>                                  
+                    </p>
+                </div>
+            </div>
+
+            <div class="workbox">
+                <div class="icon">
+                    <img src="images/api.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h3>Education</h3>
+                    <p>
+                        <dl class="description-list">
+                            <dt>University of Texas Arlington</dt>
+                            <br>
+                            <dd>Bachelor of Science: Software Engineering</dd>
+                            <br>
+                            <dt>Academic Year</dt>
+                            <br>
+                            <dd>Junior</dd>
+                            <br>
+                            <dt>Relevant courses</dt>
+                            <br>
+                            <dd>
+                                <li>Data Sturctures and Algorithms</li>
+                                <li>Intermediate Programming</li>
+                                <li>Discrete Structures</li>
+                                <li>Object oriented programming</li>
+                            
+                                
+                            </dd>                            
+                        
+                        </dl>   
+                    </p>
+                </div>
+            </div>
+
+            <div class="workbox">
+                <div class="icon">
+                    <img src="images/web.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h3>Technologies Used</h3>
+                    <p>
+                        <dl class="description-list">
+                            <dt>Python</dt>
+                            <dt>HTML & CSS</dt>
+                            <dt>C</dt>
+                            <dt>C++</dt>                            
+                            <dt>SwiftUI</dt>
+                            <dt>Java</dt>
+                        </dl>                          
+                    </p>
+                </div>
+            </div>
+
+            <div class="workbox">
+                <div class="icon">
+                    <img src="images/web.svg" alt="">
+                </div>
+                <div class="desc">
+                    <h3>Hobbies</h3>
+                    <p>
+                        Outside of work, i'm interested
+                        in following the developments of science.
+                        <br>
+                        I am also passionate about the World of <a href="https://ojomiloju.github.io/s/" class="custom-link">Art</a>
+                        and <a href="https://www.instagram.com/stories/highlights/17926532806992693/" class="custom-link">Soccer</a>
+                    </p>
+                </div>
+            </div>
+
+
+         </div>
+    </div>
+</div>
+</body>
+</html>
